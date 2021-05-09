@@ -5,18 +5,17 @@ import {
   createWebHashHistory,
   createRouter,
 } from "vue-router";
-
-import Frank from "./components/Frank.vue";
-import Frank2 from "./components/Frank2.vue";
+import Home from "./views/Home.vue";
+import Doc from "./views/Doc.vue";
 
 const history = createWebHashHistory();
 const router = createRouter({
   history,
   routes: [
-    { path: "/", component: Frank },
+    { path: "/", component: Home },
     {
       path: "/home",
-      component: Frank2,
+      component: Doc,
     },
   ],
 });
