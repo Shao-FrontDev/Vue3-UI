@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Frank />
+  <div>导航栏</div>
+  <router-link to="/home">Home</router-link>
+  <router-link to="/">About</router-link>
+  <hr />
+  <router-view></router-view>
 </template>
 
 <script>
-import Frank from "./components/Frank.vue";
-
 export default {
   name: "App",
-  components: {
-    Frank,
-  },
+  components: {},
 };
 </script>
