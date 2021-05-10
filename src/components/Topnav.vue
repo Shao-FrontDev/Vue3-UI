@@ -17,7 +17,6 @@ export default {
   setup() {
     const menuVisible = inject<Ref<boolean>>("menuVisible"); //get
     const toggleMenu = () => {
-      console.log("click");
       menuVisible.value = !menuVisible.value;
     };
     return {
