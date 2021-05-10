@@ -71,6 +71,7 @@ export default {
   display: flex;
   > aside {
     flex-shrink: 0;
+    z-index: 1;
   }
   > main {
     flex-grow: 1;

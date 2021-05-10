@@ -1,9 +1,8 @@
 <template>
-  <div>Button</div>
-  <Button>我是按钮</Button>
-  <Button theme="button">我是按钮</Button>
-  <Button theme="link">我是按钮</Button>
-  <Button theme="text">我是按钮</Button>
+  <Button>button</Button>
+  <Button theme="button">button</Button>
+  <Button theme="link">button</Button>
+  <Button theme="text">button</Button>
 </template>
 
 <script lang="ts">
