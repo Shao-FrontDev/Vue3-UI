@@ -16,6 +16,24 @@
     <Button>普普通</Button>
     <Button size="small">小小小</Button>
   </div>
+  <br />
+  <hr />
+  <br />
+  <h1>示例3</h1>
+  <br />
+  <div>
+    <Button disabled>禁用按钮</Button>
+    <Button theme="link" disabled>禁用链接按钮</Button>
+    <Button theme="text" disabled>禁用按钮</Button>
+  </div>
+  <br />
+  <hr />
+  <br />
+  <h1>示例4</h1>
+  <br />
+  <div>
+    <Button loading>加载中</Button>
+  </div>
 </template>
 
 <script lang="ts">
