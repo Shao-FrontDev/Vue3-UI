@@ -1,12 +1,9 @@
 <template>
   <div>Button</div>
-  <Button
-    @click="onClick"
-    @focus="onClick"
-    @mouseover="onClick"
-    size="small"
-    >我是按钮</Button
-  >
+  <Button>我是按钮</Button>
+  <Button theme="button">我是按钮</Button>
+  <Button theme="link">我是按钮</Button>
+  <Button theme="text">我是按钮</Button>
 </template>
 
 <script lang="ts">
