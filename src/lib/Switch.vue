@@ -28,7 +28,7 @@ button {
   height: $h;
   width: $h * 2;
   border: none;
-  background: grey;
+  background: rgba(0, 0, 0, 0.25);
   border-radius: $h/2;
   position: relative;
   transition: all 0.5s;
@@ -43,7 +43,7 @@ button {
     transition: all 1s;
   }
   &.checked {
-    background: hotpink;
+    background: #1890ff;
   }
 }
 
