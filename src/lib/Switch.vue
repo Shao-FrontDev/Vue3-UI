@@ -32,20 +32,19 @@ button {
   border-radius: $h/2;
   position: relative;
   transition: all 0.5s;
-}
-span {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: $h2;
-  width: $h2;
-  background: white;
-  border-radius: $h2 / 2;
-  transition: all 1s;
-}
-
-button.checked {
-  background: hotpink;
+  > span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: $h2;
+    width: $h2;
+    background: white;
+    border-radius: $h2 / 2;
+    transition: all 1s;
+  }
+  &.checked {
+    background: hotpink;
+  }
 }
 
 button.checked > span {
