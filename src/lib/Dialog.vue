@@ -68,7 +68,7 @@ export default {
       }
     };
     const cancel = () => {
-      if (props.cancel && props.cancel !== false) {
+      if (props.cancel && props.cancel() !== false) {
         close();
       }
     };

@@ -14,10 +14,13 @@
         </div>
       </template>
     </Dialog>
+    <h2>示例2</h2>
+    <Button @click="showDialog">toggle</Button>
   </div>
 </template>
 
 <script lang="ts">
+import { openDialog } from "../lib/openDialog.ts";
 import Dialog from "../lib/Dialog.vue";
 import Button from "../lib/Button.vue";
 import { ref, Ref } from "vue";
@@ -38,12 +41,26 @@ export default {
       return false;
     };
 
+    const showDialog = () => {
+      openDialog({
+        title: "标题",
+        content: "你好",
+        ok() {
+          console.log("ok");
+        },
+        cancel() {
+          console.log("cancel");
+        },
+      });
+    };
+
     const f2 = () => {};
     return {
       x,
       toggle,
       f1,
       f2,
+      showDialog,
     };
   },
 };
