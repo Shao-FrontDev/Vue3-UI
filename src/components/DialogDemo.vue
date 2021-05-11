@@ -4,11 +4,16 @@
 
     <Button @click="toggle">toggle</Button>
 
-    <Dialog
-      v-model:visible="x"
-      :ok="f1"
-      :cancel="f2"
-    ></Dialog>
+    <Dialog v-model:visible="x" :ok="f1" :cancel="f2">
+      <template v-slot:content>
+        <div>Hello world</div>
+      </template>
+      <template v-slot:title>
+        <div>
+          <h3>Github</h3>
+        </div>
+      </template>
+    </Dialog>
   </div>
 </template>
 
