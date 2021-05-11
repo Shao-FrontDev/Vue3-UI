@@ -3,29 +3,28 @@
     <Topnav class="nav" />
     <div class="content">
       <aside v-if="menuVisible">
-        边栏
-
-        <h2>组件列表</h2>
+        <h4>COMPONENTS</h4>
         <ol>
           <li>
             <router-link to="/doc/switch"
-              >Switch 组件</router-link
+              >Switch</router-link
             >
           </li>
           <li>
             <router-link to="/doc/button"
-              >Button 组件</router-link
+              >Button</router-link
             >
           </li>
           <li>
             <router-link to="/doc/dialog"
-              >Dialog 组件</router-link
+              >Dialog</router-link
             >
           </li>
           <li>
-            <router-link to="/doc/tabs"
-              >Tabs 组件</router-link
-            >
+            <router-link to="/doc/tabs">Tabs</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/card">Card</router-link>
           </li>
         </ol>
       </aside>
@@ -57,6 +56,7 @@ export default {
   height: 100vh;
   > .nav {
     flex-shrink: 0;
+    
   }
   > .content {
     flex-grow: 1;
@@ -81,7 +81,6 @@ export default {
 }
 
 aside {
-  background: lightblue;
   width: 150px;
   padding: 16px;
   position: fixed;
@@ -94,7 +93,16 @@ aside {
   }
   > ol {
     > li {
-      padding: 4px 0;
+      margin: 10px 0;
+      padding: 4px 4px;
+      text-align: center;
+      &:hover {
+        transition: all 1s ease;
+        background: #333;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 5px;
+      }
     }
   }
 }
