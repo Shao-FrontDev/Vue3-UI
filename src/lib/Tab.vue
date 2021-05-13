@@ -1,5 +1,3 @@
 <template>
-  <div>
-  
-  </div>
+  <div>Tab 标签</div>
 </template>
